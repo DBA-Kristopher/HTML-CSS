@@ -1,0 +1,182 @@
+<!DOCTYPE html >
+
+
+<html>
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Overwatch Macro</title>
+<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.0.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#">Overwatch</a></h1>
+				<p>  <a href="http://.co" rel="nofollow"></a></p>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Homepage</a></li>
+			<li class="current_page_item"><a href="macros.html">Macros</a></li>
+			<li><a href="tips.html">Tips</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="links.html">Links</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="page">
+		<div id="content">
+			<div id="slider">
+				<div class="viewer">
+					<div class="reel">
+						<div class="slide"> <img src="images/pics01.jpg" width="590" height="300" alt="" /> </div>
+						<div class="slide"> <img src="images/pics02.jpg" width="590" height="300" alt="" /> </div>
+						<div class="slide"> <img src="images/pics03.jpg" width="590" height="300" alt="" /> </div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$('#slider').slidertron({
+					viewerSelector: '.viewer',
+					reelSelector: '.viewer .reel',
+					slidesSelector: '.viewer .reel .slide',
+					advanceDelay: 3000,
+					speed: 'slow'
+				});
+			</script>
+
+			<div class="post">
+				<h2 class="title"><a href="#">Macros</a></h2>
+				
+				<div class="entry">
+					<p>Copy into text file and rename .txt extention to .ahk</p>
+
+
+<p></p>
+<div style="background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;">
+</a><b>GUI SCRIPTS</b><br/>
+Gui, Add, Button, default, OK  ; The label ButtonOK (if it exists) will be run when the button is pressed.
+Gui, Show,, Simple Input Example
+return  ; End of auto-execute section. The script is idle until the user does something.
+
+GuiClose:
+ButtonOK:
+Gui, Submit  ; Save the input from the user to each control's associated variable.
+MsgBox You entered "%FirstName% %LastName%".
+ExitApp
+</div> 
+<p></p>
+<p></p>
+<div style="background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;">
+</a><b>Genji Burst Damage</b><br/>
+#MaxHotkeysPerInterval 200
+/::Suspend
+
+~*F::
+
+{
+	Send, {RButton Down}
+	Sleep 35
+	Send, {Shift Down}
+        Sleep 25
+	Send, {RButton Up}
+        Send, {Shift Up}
+	
+}
+Return
+</div> 
+<p></p>
+<p></p>
+<div style="background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;">
+</a><b>Zen Macro for orbs</b><br/>
+#MaxThreadsPerHotkey 2
+/::Suspend
+~*2::
+    Toggle := !Toggle
+    while Toggle
+    {
+
+
+        Send, {E Down}
+        Sleep, 500
+        Send, {E Up}
+        Send, {Shift Down}
+        Sleep, 500
+        Send, {Shift Up}
+
+
+
+    }
+  
+return 
+</div> 
+<p></p>
+<p></p>
+<div style="background-color: #FFF8C6; margin-left: 20px; margin-right: 20px; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px;">
+</a><b>Bunny Hop</b><br/>
+#MaxThreadsPerHotkey 2
+/::Suspend
+~*2::
+    Toggle := !Toggle
+    while Toggle
+    {
+
+
+        Send, {Space Down}
+        Sleep, 100
+        Send, {Space Up}
+
+
+
+    }
+  
+return
+</div> 
+<p></p>
+
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title"><a href="#"></a></h2>
+				
+				<div class="entry">
+					<p>...</p>
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title"><a href="#"> </a></h2>
+				
+				<div class="entry">
+							</div>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Overwatch Macros  <a href="#">Using AHK</a>.   <a href="http://.co" rel="nofollow"></a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
